@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.parentContainer {
+  font-size: 22px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  width: 48%;
+  border-radius: 5px;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.plusButton {
+  font-size: 28px;
+}
+.serachContainer {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar {
+  width: 48%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.mainContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.contentDiv {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.containerContent {
+  display: flex;
+  gap: 10px;
+}
+.checked-item {
+  text-decoration: line-through;
+}
+.not-checked-item {
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.total {
+  color: blue;
+}
+.complete {
+  color: green;
+}
+.incomplete {
+  color: orange;
+}
+.btnContainer {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.containerContent:hover .btnContainer {
+  display: flex;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-edit {
+  margin-right: 10px;
+  color: blue;
+  cursor: pointer;
+}
+.btn-dlt {
+  color: red;
+  cursor: pointer;
+}
+.itemBgOdd {
+  background: #d1ffbd;
+  margin-top: 2px;
+}
+.itemBgEven {
+  background: #ff57;
+  margin-top: 2px;
 }
